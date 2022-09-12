@@ -11,7 +11,13 @@ const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between py-10">
+        <div className="py-10">
+          <p className="py-4 text-3xl font-semibold text-gray-900">Something new is in the works</p>
+          <p className="text-xl font-medium text-gray-600">
+            Check back in a couple of weeks for an updated site
+          </p>
+        </div>
+        {/* <header className="flex items-center justify-between py-10">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
@@ -43,9 +49,9 @@ const LayoutWrapper = ({ children }) => {
             <ThemeSwitch />
             <MobileNav />
           </div>
-        </header>
+        </header> */}
         <main className="mb-auto">{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </SectionContainer>
   )
